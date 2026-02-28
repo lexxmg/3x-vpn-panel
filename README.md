@@ -13,6 +13,11 @@
 
 ## 🚀 Как использовать?
 
-### 1. Запуск скрипта
+### Вариант 1. Запуск скрипта (после отработки скрипт будет удален)
 ```bash
 sudo apt update && sudo apt install -y git curl openssl qrencode systemd && sudo curl -o /tmp/install-3xui.sh https://raw.githubusercontent.com/lexxmg/3x-vpn-panel/main/install-3xui.sh && sudo chmod +x /tmp/install-3xui.sh && sudo /tmp/install-3xui.sh
+```
+### Вариант 2. Скрипт останется и его можно будет запустить ещё раз (например узнать логин пароль)
+```bash
+sudo apt update && sudo apt install -y git curl openssl qrencode systemd && sudo curl -O https://raw.githubusercontent.com/lexxmg/3x-vpn-panel/main/install-3xui.sh && sudo chmod +x install-3xui.sh && sudo ./install-3xui.sh
+```
